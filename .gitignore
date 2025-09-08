@@ -1,0 +1,12 @@
+build
+crx-hmr.js
+multi-accounts.zip
+_metadata
+.vscode
+.TODO
+build.sh
+jsconfig.json
+popup/js/om.event.js
+
+
+

@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"priority": 1,
+		"action": {
+			"type": "modifyHeaders",
+			"requestHeaders": [
+				{ "operation": "set", "header": "Sec-Fetch-Dest", "value": "document" },
+				{ "operation": "set", "header": "Sec-Fetch-Site", "value": "same-origin" },
+				{ "operation": "set", "header": "Sec-Fetch-User", "value": "?1" },
+				{ "operation": "set", "header": "Referer", "value": "https://google.com" }
+			]
+		},
+
+		"condition": {
+			"urlFilter": "*",
+			"resourceTypes": ["sub_frame"]
+		}
+	}
+]

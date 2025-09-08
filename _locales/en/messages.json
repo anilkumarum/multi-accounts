@@ -1,0 +1,111 @@
+{
+	"extName": {
+		"message": "multiAccounts - multi accounts for any sites",
+		"description": "Extension name"
+	},
+
+	"extDescription": {
+		"message": "Parallel multiple login for any websites. Unlimited number of accounts. Multi profile manager. Export & Import accounts. Open Source",
+		"description": "Extension description"
+	},
+
+	"add_account": {
+		"message": "Add Account",
+		"description": "Add Account"
+	},
+
+	"name": {
+		"message": "Name",
+		"description": "Name"
+	},
+
+	"host": {
+		"message": "Host",
+		"description": "Host"
+	},
+
+	"group": {
+		"message": "Group",
+		"description": "Group"
+	},
+
+	"create_group": {
+		"message": "Create_Group",
+		"description": "Create_Group"
+	},
+
+	"added_in_tabgroup": {
+		"message": "Added in tabgroup",
+		"description": "Added in tabgroup"
+	},
+
+	"import_accounts": {
+		"message": "Upload JSON file to import accounts",
+		"description": "Upload JSON file to import accounts"
+	},
+
+	"export_all_accounts": {
+		"message": "Export all accounts to JSON file",
+		"description": "Export all accounts to JSON file"
+	},
+
+	"edit_profile_name": {
+		"message": "Edit profile name",
+		"description": "Edit profile name"
+	},
+
+	"permission_required": {
+		"message": "Permission Required",
+		"description": "Permission Required"
+	},
+
+	"open_account_in_new_tab": {
+		"message": "Open Account in new Tab",
+		"description": "Open Account in new Tab"
+	},
+
+	"delete_account": {
+		"message": "Delete account",
+		"description": "Delete account"
+	},
+
+	"cannot_add_account": {
+		"message": "Cannot add account on this site",
+		"description": "Cannot add account on this site"
+	},
+
+	"webpage_permission_required": {
+		"message": "Webpage permission required to read & edit storage, cookies",
+		"description": "Webpage permission required to read & edit storage, cookies"
+	},
+
+	"grant_permission_for_above_webpages": {
+		"message": "Grant Permission for Above webpages",
+		"description": "Grant Permission for Above webpages"
+	},
+
+	"grant_permission_for_all_webpages": {
+		"message": "Grant Permission for All webpages",
+		"description": "Grant Permission for All webpages"
+	},
+
+	"permission_denied": {
+		"message": "Permission denied",
+		"description": "Permission denied"
+	},
+
+	"report_bug": {
+		"message": "Report Bug",
+		"description": "Report Bug"
+	},
+
+	"just_one_click": {
+		"message": "Just one click",
+		"description": "Just one Click"
+	},
+
+	"sorry_something_went_wrong": {
+		"message": "Sorry, Something went wrong",
+		"description": "Sorry, Something went wrong"
+	}
+}

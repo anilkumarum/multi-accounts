@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiAccounts welcome guide</title>
+</head>
+
+<body>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        html {
+            scrollbar-width: thin;
+        }
+
+        body {
+            background-color: light-dark(whitesmoke, black);
+            color: light-dark(black, rgb(245, 245, 245));
+            font-size: 100%;
+            line-height: 1.4;
+        }
+
+        article {
+            background-color: light-dark(white, hsl(0, 0%, 10%));
+            box-shadow: rgba(219, 219, 219, 0.19) 0px 10px 20px, rgba(163, 163, 163, 0.23) 0px 6px 6px;
+            width: 70%;
+            margin-left: 15%;
+            padding: 1em;
+        }
+
+        li {
+            margin-bottom: 0.4em;
+
+            &>div {
+                font-weight: bold;
+            }
+        }
+
+        kbd {
+            font-weight: 500;
+            background-color: light-dark(hsl(0, 0%, 92%), rgb(60, 60, 60));
+            padding-inline: 1px;
+        }
+
+        video {
+            display: block;
+            max-width: 80%;
+            margin-inline: auto;
+            margin-top: 0.2em;
+            border-radius: 0.4em;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-inline: auto;
+
+            & th,
+            & td {
+                border: 1px solid rgb(160 160 160);
+                padding: 0.4em;
+            }
+        }
+    </style>
+    <h1 style="text-align: center;">Thanks for installing <strong>multiAccounts</strong></h1>
+    <article>
+        <h1>How to use multiAccounts</h1>
+
+        <p> Pin multiAccounts after install extension <br>
+            Click on multiAccounts icon or (<kbd>Alt+H</kbd> ) to open multiAccounts popup Window <br>
+        </p>
+        <div> <span>Extension pinned status:</span> <var style="color: red;" id="pin_ext">Not pinned</var> </div>
+        <video src="https://crxextstatic.blob.core.windows.net/code-rail/cookie_editor-pin-extension.webm"
+            controls></video>
+
+        <table id="global-keyboard-shortcuts">
+            <caption>Global Keyboard shortcuts</caption>
+            <thead>
+                <tr>
+                    <th> Format Action</th>
+                    <th>Keyboard Shortcut</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Open popup window</td>
+                    <td id="_execute_action"><kbd>Alt+Shift+M</kbd></td>
+                    <td><button>Change</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <video src="https://crxextstatic.blob.core.windows.net/code-rail/cookie_editor-update-key-shortcuts.webm"
+            controls></video>
+
+        <blockquote>
+            <p>
+                multiAccounts doesn't ask permission:
+                <code><b>"Read and change all your data on all websites".</b></code><br>
+                So that you need to click again on <b>Add Account</b> button to add account
+            </p>
+        </blockquote>
+
+        <h2>How to add account on any websites</h2>
+        <p>
+            Click on <b>Add account</b> to add account
+            <video src="https://crxextstatic.blob.core.windows.net/web-rail/multi_accounts-add-account.webm"
+                controls></video>
+        </p>
+
+        <h2>How to open account on new tab</h2>
+        <p>
+            Click on <b>Open link</b> icon on top right corner of account card.
+            Website with this account will open in new tab
+            <video src="https://crxextstatic.blob.core.windows.net/web-rail/multi_accounts-open-account.webm"
+                controls></video>
+        </p>
+
+        <h2> Organize account - group account </h2>
+        <p>
+            Click on <b>Drop down</b> icon next to Group text. <br>
+            Select existing tabGroups or create new tabGroups.
+            <video src="https://crxextstatic.blob.core.windows.net/web-rail/multi_accounts-group-account.webm"
+                controls></video>
+        </p>
+
+        <h2>Export files</h2>
+        <p>
+            Click on <b>File Export</b> icon on top right corner to export all accounts in JSON format <br>
+            then you can import exported JSON file from any chromium browser on any devices.
+            <video src="https://crxextstatic.blob.core.windows.net/web-rail/multi_accounts-export-accounts.webm"
+                controls></video>
+        </p>
+
+        <h2>Import Account</h2>
+        <p>
+            Click on <code>account plus</code> on top right corner. <br>
+            Pick json file which contain account info <br>
+            Supported format: JSON (exported from this extension)
+            <video src="https://crxextstatic.blob.core.windows.net/web-rail/multi_accounts-group-account.webm"
+                controls></video>
+        </p>
+    </article>
+    <script type="module" src="./guide.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+site-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 0.4em;
+	padding-inline: 0.4em;
+
+	& img {
+		height: 32px;
+	}
+
+	& .title {
+		line-clamp: 2;
+	}
+
+	& .domain {
+		font-size: 0.9rem;
+		color: light-dark(rgb(0, 89, 255), rgb(25, 162, 241));
+	}
+}
+
+#add-account {
+	--btn-clr: radial-gradient(circle, rgba(191, 7, 198, 1) 35%, rgba(109, 0, 255, 1) 100%);
+	border: none;
+	background-image: var(--btn-clr);
+	box-shadow: var(--card);
+	font-weight: bold;
+	font-size: medium;
+	margin-top: 0.5em;
+}
+
+top-bar {
+	display: flex;
+	align-items: center;
+	column-gap: 1em;
+	padding-right: 1em;
+	padding-block: 2px;
+	margin-bottom: 0.4em;
+	background-color: light-dark(hsl(0, 0%, 94%), hsl(0, 0%, 25%));
+	border-radius: 0.4em 0.4em 0 0;
+	box-shadow: var(--card);
+
+	& > span {
+		margin-inline: auto;
+	}
+}

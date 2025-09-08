@@ -1,0 +1,60 @@
+{
+	"manifest_version": 3,
+	"minimum_chrome_version": "123",
+	"offline_enabled": true,
+	"default_locale": "en",
+	"name": "__MSG_extName__",
+	"short_name": "multiAccount",
+	"description": "__MSG_extDescription__",
+	"version": "0.0.1",
+	"author": "WebRail",
+
+	"icons": {
+		"128": "icon_128.png",
+		"16": "icon_24.png"
+	},
+
+	"action": {
+		"default_title": "multiAccounts (Alt+Shift+M)",
+		"default_popup": "popup/index.html"
+	},
+
+	"options_page": "options/index.html",
+
+	"background": {
+		"service_worker": "background/background.js",
+		"type": "module"
+	},
+
+	"commands": {
+		"_execute_action": {
+			"suggested_key": {
+				"default": "Alt+Shift+M",
+				"windows": "Alt+Shift+M",
+				"mac": "Alt+Shift+M",
+				"linux": "Alt+Shift+M"
+			}
+		}
+	},
+
+	"declarative_net_request": {
+		"rule_resources": [
+			{
+				"id": "sub_frame_rule",
+				"enabled": true,
+				"path": "net_request.json"
+			}
+		]
+	},
+
+	"permissions": [
+		"declarativeNetRequestWithHostAccess",
+		"activeTab",
+		"cookies",
+		"storage",
+		"scripting",
+		"webRequest"
+	],
+	"optional_permissions": ["tabGroups"],
+	"optional_host_permissions": ["<all_urls>"]
+}

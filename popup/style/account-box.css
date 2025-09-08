@@ -1,0 +1,42 @@
+account-list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5em;
+	padding: 0.4em;
+
+	&:empty::before {
+		content: "No account found";
+		color: red;
+	}
+}
+
+account-box {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.4em;
+	padding: 0.4em;
+	/* border: 2px solid hsl(var(--h), 100%, 50%); */
+	border-radius: 0.4em;
+	box-shadow: hsl(var(--h), 100%, 50%, 0.4) 0px 3px 6px, hsl(var(--h), 100%, 50%, 0.4) 0px 3px 6px;
+	background-color: light-dark(white, hsl(0, 0%, 16%));
+
+	&:hover {
+		background-color: light-dark(whitesmoke, hsl(0, 0%, 20%));
+	}
+
+	& > div {
+		display: flex;
+		column-gap: 0.2em;
+
+		& atom-icon:last-child {
+			margin-left: auto;
+		}
+	}
+
+	& input {
+		border: none;
+		background-color: inherit;
+		width: 16ch;
+		font-size: inherit;
+	}
+}

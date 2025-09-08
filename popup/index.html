@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiAccounts - multi accounts for any sites</title>
+    <script type="module" src="/crx-hmr.js"></script>
+</head>
+
+<body>
+    <multi-accounts> </multi-accounts>
+    <div style="height: 1lh;"></div>
+    <div id="reportSite" style="font-size: x-small;text-align: center;cursor: pointer;">Don't work on this site?</div>
+    <script type="module" src="./js/popup.js"></script>
+    <style>
+        :scope {
+            color-scheme: light dark;
+        }
+
+        body {
+            min-width: 20ch;
+            min-height: 5lh;
+        }
+    </style>
+</body>
+
+</html>

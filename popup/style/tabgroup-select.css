@@ -1,0 +1,54 @@
+tabgroup-select {
+	padding: 0.2em 0;
+	border-radius: 0 0 0.3em 0.3em;
+	box-shadow: var(--card);
+	background-color: light-dark(hsl(0, 0%, 100%), hsl(0, 0%, 24%));
+
+	& li {
+		padding: 0.3em 0.5em;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 0.6em;
+		cursor: pointer;
+
+		&:not(:last-child) {
+			border-bottom: var(--border);
+			margin-bottom: 0.3em;
+		}
+	}
+}
+
+#tabgroup-updator {
+	padding: 0.5em;
+	margin: auto;
+	inset: 0;
+	min-width: 16em;
+}
+
+.color-box {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5em;
+
+	& label {
+		height: 5vw;
+		width: 5vw;
+		border-radius: 50%;
+		display: inline-block;
+		background-color: var(--clr);
+
+		&:has(input:checked) {
+			outline: 1px dashed red;
+		}
+	}
+
+	& + input {
+		display: block;
+		width: 100%;
+		padding: 0.4em;
+		margin-block: 0.5em;
+		border-radius: 0.4em;
+		border: var(--border);
+	}
+}
